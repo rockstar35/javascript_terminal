@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+}
+form{
+    max-width:800px;
+    margin:auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(215, 41, 216);
+  padding: 10px;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  border-color: rgb(215, 41, 216);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: rgb(215, 41, 216) !important;
+  font-size: 20px;
+  text-decoration: bold;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: white;
+}
+.padding{
+  margin: 10px;
+  background-color: rgb(215, 41, 216);
+}
+.input-field:focus {
+  
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+p {
+  margin: 0px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-family: verdana;
+  font-size: 20px;
+  color: white;
+}
