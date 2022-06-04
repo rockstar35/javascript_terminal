@@ -29,7 +29,8 @@ $(document).ready(function(){
       $(".terminal").empty();
       loading = true;
       var text = "Starting Fngi session: "+getDate();
-      $(".terminal").append("<p>"+text+"</p>");
+      
+      titleTyping(text);
       $(".terminal").append("<h1>  </h1>");
       load();
     }
@@ -46,12 +47,21 @@ async function load(){
       await timer(1000*random);
       $(".terminal").append("<p class='item"+i+"'>"+"</p>");
       for(let j = 0; j< stringArray[i].length; j++){
-        await timer(70);
+        await timer(50);
         $(".item"+i+"").append(stringArray[i].substr(j,1));
       }
   }
   $(".input-field").val("");
   loading = false;
+}
+async function titleTyping(text){
+  //var typing = text.split("")
+  $(".terminal").append("<p class='title'></p>");
+  for(let i = 0; i< text.length; i++){
+    await timer(50);
+    $(".title").append(text.substr(i,1));
+  }
+  //$(".terminal").append("<p>"+text+"</p>");
 }
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
